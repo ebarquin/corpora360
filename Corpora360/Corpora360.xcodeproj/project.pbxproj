@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6AA1B7B8027A70FEF9C508F7 /* Pods_Corpora360.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68D05A334E9E2F3EB2A7975 /* Pods_Corpora360.framework */; };
+		9C8D0AA4217E96020050FFEF /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0AA3217E96020050FFEF /* Article.swift */; };
 		9CE3BFE7217E6DD700838D95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BFE6217E6DD700838D95 /* AppDelegate.swift */; };
 		9CE3BFE9217E6DD700838D95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BFE8217E6DD700838D95 /* ViewController.swift */; };
 		9CE3BFEC217E6DD700838D95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3BFEA217E6DD700838D95 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		8BAB927784E90C5E69019470 /* Pods-Corpora360.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corpora360.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Corpora360/Pods-Corpora360.debug.xcconfig"; sourceTree = "<group>"; };
+		9C8D0AA3217E96020050FFEF /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		9CE3BFE3217E6DD700838D95 /* Corpora360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Corpora360.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE3BFE6217E6DD700838D95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CE3BFE8217E6DD700838D95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,8 +114,8 @@
 				9CE3C00D217E771400838D95 /* Infraestructure */,
 				9CE3C00F217E783B00838D95 /* Bussiness */,
 				9CE3C00E217E77F100838D95 /* Resources */,
-				9CE3C00C217E76AD00838D95 /* NewsDetail */,
-				9CE3C00B217E769600838D95 /* NewsList */,
+				9CE3C00C217E76AD00838D95 /* ArticleDetail */,
+				9CE3C00B217E769600838D95 /* ArticleList */,
 				9CE3C009217E765800838D95 /* SearchMenu */,
 				9CE3BFE8217E6DD700838D95 /* ViewController.swift */,
 				9CE3BFEA217E6DD700838D95 /* Main.storyboard */,
@@ -138,18 +140,18 @@
 			path = SearchMenu;
 			sourceTree = "<group>";
 		};
-		9CE3C00B217E769600838D95 /* NewsList */ = {
+		9CE3C00B217E769600838D95 /* ArticleList */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = NewsList;
+			path = ArticleList;
 			sourceTree = "<group>";
 		};
-		9CE3C00C217E76AD00838D95 /* NewsDetail */ = {
+		9CE3C00C217E76AD00838D95 /* ArticleDetail */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = NewsDetail;
+			path = ArticleDetail;
 			sourceTree = "<group>";
 		};
 		9CE3C00D217E771400838D95 /* Infraestructure */ = {
@@ -196,6 +198,7 @@
 		9CE3C012217E786D00838D95 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9C8D0AA3217E96020050FFEF /* Article.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 			files = (
 				9CE3BFE9217E6DD700838D95 /* ViewController.swift in Sources */,
 				9CE3BFE7217E6DD700838D95 /* AppDelegate.swift in Sources */,
+				9C8D0AA4217E96020050FFEF /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
