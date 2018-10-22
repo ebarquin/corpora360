@@ -6,7 +6,9 @@ target 'Corpora360' do
   use_frameworks!
 
   # Pods for Corpora360
-
+  pod 'Alamofire'
+  pod 'Kingfisher'
+  pod 'SwiftyJSON'
   target 'Corpora360Tests' do
     inherit! :search_paths
     # Pods for testing
