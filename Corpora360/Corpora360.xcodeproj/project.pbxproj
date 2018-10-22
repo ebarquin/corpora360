@@ -109,11 +109,14 @@
 		9CE3BFE5217E6DD700838D95 /* Corpora360 */ = {
 			isa = PBXGroup;
 			children = (
-				9CE3BFE6217E6DD700838D95 /* AppDelegate.swift */,
+				9CE3C00D217E771400838D95 /* Infraestructure */,
+				9CE3C00F217E783B00838D95 /* Bussiness */,
+				9CE3C00E217E77F100838D95 /* Resources */,
+				9CE3C00C217E76AD00838D95 /* NewsDetail */,
+				9CE3C00B217E769600838D95 /* NewsList */,
+				9CE3C009217E765800838D95 /* SearchMenu */,
 				9CE3BFE8217E6DD700838D95 /* ViewController.swift */,
 				9CE3BFEA217E6DD700838D95 /* Main.storyboard */,
-				9CE3BFED217E6DD700838D95 /* Assets.xcassets */,
-				9CE3BFEF217E6DD700838D95 /* LaunchScreen.storyboard */,
 				9CE3BFF2217E6DD700838D95 /* Info.plist */,
 			);
 			path = Corpora360;
@@ -126,6 +129,75 @@
 				9CE3BFFD217E6DD700838D95 /* Info.plist */,
 			);
 			path = Corpora360Tests;
+			sourceTree = "<group>";
+		};
+		9CE3C009217E765800838D95 /* SearchMenu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SearchMenu;
+			sourceTree = "<group>";
+		};
+		9CE3C00B217E769600838D95 /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewsList;
+			sourceTree = "<group>";
+		};
+		9CE3C00C217E76AD00838D95 /* NewsDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewsDetail;
+			sourceTree = "<group>";
+		};
+		9CE3C00D217E771400838D95 /* Infraestructure */ = {
+			isa = PBXGroup;
+			children = (
+				9CE3BFE6217E6DD700838D95 /* AppDelegate.swift */,
+			);
+			path = Infraestructure;
+			sourceTree = "<group>";
+		};
+		9CE3C00E217E77F100838D95 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9CE3BFED217E6DD700838D95 /* Assets.xcassets */,
+				9CE3BFEF217E6DD700838D95 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9CE3C00F217E783B00838D95 /* Bussiness */ = {
+			isa = PBXGroup;
+			children = (
+				9CE3C012217E786D00838D95 /* Models */,
+				9CE3C011217E786000838D95 /* Managers */,
+				9CE3C010217E785800838D95 /* Interactors */,
+			);
+			path = Bussiness;
+			sourceTree = "<group>";
+		};
+		9CE3C010217E785800838D95 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		9CE3C011217E786000838D95 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		9CE3C012217E786D00838D95 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,6 +512,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -489,6 +562,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -501,11 +575,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XPZ2XV3WU;
 				INFOPLIST_FILE = Corpora360/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eugeniobarquin.Corpora360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -517,11 +592,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XPZ2XV3WU;
 				INFOPLIST_FILE = Corpora360/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eugeniobarquin.Corpora360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
