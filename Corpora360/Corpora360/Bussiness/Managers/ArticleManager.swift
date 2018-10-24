@@ -3,13 +3,15 @@ import SwiftyJSON
 import Alamofire
 
 public protocol ArticleManager {
-    func downloadArticles(completion: @escaping(Articles) -> Void)
+    func downloadArticles(params: String, completion: @escaping(Articles) -> Void)
 }
 
 public class ArticleManagerImpl: ArticleManager {
     
-    public func downloadArticles(completion: @escaping(Articles) -> Void) {
-        Alamofire.request(endpoint, method: .get).responseJSON { (response) in
+    public func downloadArticles(params: String, completion: @escaping(Articles) -> Void) {
+        Alamofire.request("\(ENDPOINT)\(params)",
+            method: .get,
+            parameters: PARAMETERS).responseJSON { (response) in
             switch response.result {
             case .success:
                 if let value = response.result.value {
@@ -24,16 +26,16 @@ public class ArticleManagerImpl: ArticleManager {
     }
     
     func decode(json: JSON) -> Articles {
-        let entries = json.arrayValue
+        let entries = json["results"].arrayValue
         
         var articles = Articles()
         
         for entry in entries {
-            let title = entry[""].stringValue
-            let author = entry[""].stringValue
-            let section = entry[""].stringValue
-            let date = entry[""].stringValue
-            let url = entry[""].stringValue
+            let title = entry["title"].stringValue
+            let author = entry["byline"].stringValue
+            let section = entry["section"].stringValue
+            let date = entry["published_date"].stringValue
+            let url = entry["url"].stringValue
             
             let article = Article(title: title, author: author, section: section, date: date, url: url)
             articles.append(article)
