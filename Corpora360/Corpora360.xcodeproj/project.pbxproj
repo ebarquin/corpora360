@@ -11,7 +11,9 @@
 		9C8D0AA4217E96020050FFEF /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0AA3217E96020050FFEF /* Article.swift */; };
 		9C8D0AA6217E99FD0050FFEF /* ArticleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0AA5217E99FD0050FFEF /* ArticleManager.swift */; };
 		9C8D0AA9217F9E870050FFEF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0AA8217F9E870050FFEF /* Utils.swift */; };
-		9C8D0AB22180B6D30050FFEF /* DownloadMostEmailedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0AB12180B6D30050FFEF /* DownloadMostEmailedInteractor.swift */; };
+		9C8D0AB22180B6D30050FFEF /* DownloadArticlesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0AB12180B6D30050FFEF /* DownloadArticlesInteractor.swift */; };
+		9C8D0ABA2180E4810050FFEF /* SearchMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0AB92180E4810050FFEF /* SearchMenuController.swift */; };
+		9C8D0ABC2180E49F0050FFEF /* SearchMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0ABB2180E49F0050FFEF /* SearchMenuPresenter.swift */; };
 		9CE3BFE7217E6DD700838D95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BFE6217E6DD700838D95 /* AppDelegate.swift */; };
 		9CE3BFE9217E6DD700838D95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BFE8217E6DD700838D95 /* ViewController.swift */; };
 		9CE3BFEC217E6DD700838D95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3BFEA217E6DD700838D95 /* Main.storyboard */; };
@@ -36,7 +38,9 @@
 		9C8D0AA3217E96020050FFEF /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		9C8D0AA5217E99FD0050FFEF /* ArticleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleManager.swift; sourceTree = "<group>"; };
 		9C8D0AA8217F9E870050FFEF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		9C8D0AB12180B6D30050FFEF /* DownloadMostEmailedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadMostEmailedInteractor.swift; sourceTree = "<group>"; };
+		9C8D0AB12180B6D30050FFEF /* DownloadArticlesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadArticlesInteractor.swift; sourceTree = "<group>"; };
+		9C8D0AB92180E4810050FFEF /* SearchMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMenuController.swift; sourceTree = "<group>"; };
+		9C8D0ABB2180E49F0050FFEF /* SearchMenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMenuPresenter.swift; sourceTree = "<group>"; };
 		9CE3BFE3217E6DD700838D95 /* Corpora360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Corpora360.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE3BFE6217E6DD700838D95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CE3BFE8217E6DD700838D95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 		9CE3C009217E765800838D95 /* SearchMenu */ = {
 			isa = PBXGroup;
 			children = (
+				9C8D0AB92180E4810050FFEF /* SearchMenuController.swift */,
+				9C8D0ABB2180E49F0050FFEF /* SearchMenuPresenter.swift */,
 			);
 			path = SearchMenu;
 			sourceTree = "<group>";
@@ -199,7 +205,7 @@
 		9CE3C010217E785800838D95 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
-				9C8D0AB12180B6D30050FFEF /* DownloadMostEmailedInteractor.swift */,
+				9C8D0AB12180B6D30050FFEF /* DownloadArticlesInteractor.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -439,8 +445,10 @@
 				9CE3BFE9217E6DD700838D95 /* ViewController.swift in Sources */,
 				9CE3BFE7217E6DD700838D95 /* AppDelegate.swift in Sources */,
 				9C8D0AA6217E99FD0050FFEF /* ArticleManager.swift in Sources */,
+				9C8D0ABA2180E4810050FFEF /* SearchMenuController.swift in Sources */,
 				9C8D0AA4217E96020050FFEF /* Article.swift in Sources */,
-				9C8D0AB22180B6D30050FFEF /* DownloadMostEmailedInteractor.swift in Sources */,
+				9C8D0AB22180B6D30050FFEF /* DownloadArticlesInteractor.swift in Sources */,
+				9C8D0ABC2180E49F0050FFEF /* SearchMenuPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
