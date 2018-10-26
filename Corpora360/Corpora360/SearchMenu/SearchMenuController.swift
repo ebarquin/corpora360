@@ -91,6 +91,9 @@ class SearchMenuViewController: UIViewController, SearchMenuView {
     }
     
     func navigateToArticleList(_ articles: Articles) {
-        //Implement Navigation
+        let listOfArticlesVC = ArticleListViewController.initFromStoryboard()
+        listOfArticlesVC.articles = articles
+        navigationController?.pushViewController(listOfArticlesVC, animated: true)
+        
     }
 }

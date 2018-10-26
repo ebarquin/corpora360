@@ -36,8 +36,10 @@ public class ArticleManagerImpl: ArticleManager {
             let section = entry["section"].stringValue
             let date = entry["published_date"].stringValue
             let url = entry["url"].stringValue
-            
-            let article = Article(title: title, author: author, section: section, date: date, url: url)
+            let media = entry["media"].arrayValue
+            let mediaArray = media[0]["media-metadata"].arrayValue.map({$0["url"].stringValue})
+            let image = mediaArray[0]
+            let article = Article(title: title, author: author, section: section, date: date, url: url, image: image)
             articles.append(article)
         }
         return articles

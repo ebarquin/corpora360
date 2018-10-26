@@ -14,8 +14,12 @@
 		9C8D0AB22180B6D30050FFEF /* DownloadArticlesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0AB12180B6D30050FFEF /* DownloadArticlesInteractor.swift */; };
 		9C8D0ABA2180E4810050FFEF /* SearchMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0AB92180E4810050FFEF /* SearchMenuController.swift */; };
 		9C8D0ABC2180E49F0050FFEF /* SearchMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0ABB2180E49F0050FFEF /* SearchMenuPresenter.swift */; };
+		9C8D0ABE2181EDC20050FFEF /* ArticleListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0ABD2181EDC20050FFEF /* ArticleListController.swift */; };
+		9C8D0AC02181EDD30050FFEF /* ArticleListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0ABF2181EDD30050FFEF /* ArticleListPresenter.swift */; };
+		9C8D0AC221830AAE0050FFEF /* StoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0AC121830AAE0050FFEF /* StoryboardViewController.swift */; };
+		9C8D0AC421830B090050FFEF /* ArticleListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8D0AC321830B090050FFEF /* ArticleListView.storyboard */; };
+		9C8D0AC7218340480050FFEF /* ArticleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0AC6218340480050FFEF /* ArticleListCell.swift */; };
 		9CE3BFE7217E6DD700838D95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BFE6217E6DD700838D95 /* AppDelegate.swift */; };
-		9CE3BFE9217E6DD700838D95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BFE8217E6DD700838D95 /* ViewController.swift */; };
 		9CE3BFEC217E6DD700838D95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3BFEA217E6DD700838D95 /* Main.storyboard */; };
 		9CE3BFEE217E6DD700838D95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3BFED217E6DD700838D95 /* Assets.xcassets */; };
 		9CE3BFF1217E6DD700838D95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3BFEF217E6DD700838D95 /* LaunchScreen.storyboard */; };
@@ -41,9 +45,13 @@
 		9C8D0AB12180B6D30050FFEF /* DownloadArticlesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadArticlesInteractor.swift; sourceTree = "<group>"; };
 		9C8D0AB92180E4810050FFEF /* SearchMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMenuController.swift; sourceTree = "<group>"; };
 		9C8D0ABB2180E49F0050FFEF /* SearchMenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMenuPresenter.swift; sourceTree = "<group>"; };
+		9C8D0ABD2181EDC20050FFEF /* ArticleListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListController.swift; sourceTree = "<group>"; };
+		9C8D0ABF2181EDD30050FFEF /* ArticleListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListPresenter.swift; sourceTree = "<group>"; };
+		9C8D0AC121830AAE0050FFEF /* StoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewController.swift; sourceTree = "<group>"; };
+		9C8D0AC321830B090050FFEF /* ArticleListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleListView.storyboard; sourceTree = "<group>"; };
+		9C8D0AC6218340480050FFEF /* ArticleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListCell.swift; sourceTree = "<group>"; };
 		9CE3BFE3217E6DD700838D95 /* Corpora360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Corpora360.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE3BFE6217E6DD700838D95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9CE3BFE8217E6DD700838D95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9CE3BFEB217E6DD700838D95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CE3BFED217E6DD700838D95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CE3BFF0217E6DD700838D95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,8 +110,17 @@
 			isa = PBXGroup;
 			children = (
 				9C8D0AA8217F9E870050FFEF /* Utils.swift */,
+				9C8D0AC121830AAE0050FFEF /* StoryboardViewController.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		9C8D0AC52183402E0050FFEF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9C8D0AC6218340480050FFEF /* ArticleListCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		9CE3BFDA217E6DD700838D95 = {
@@ -136,7 +153,6 @@
 				9CE3C00B217E769600838D95 /* ArticleList */,
 				9CE3C009217E765800838D95 /* SearchMenu */,
 				9C8D0AA7217F9E720050FFEF /* Utils */,
-				9CE3BFE8217E6DD700838D95 /* ViewController.swift */,
 				9CE3BFEA217E6DD700838D95 /* Main.storyboard */,
 				9CE3BFF2217E6DD700838D95 /* Info.plist */,
 			);
@@ -164,6 +180,10 @@
 		9CE3C00B217E769600838D95 /* ArticleList */ = {
 			isa = PBXGroup;
 			children = (
+				9C8D0AC52183402E0050FFEF /* Cell */,
+				9C8D0ABD2181EDC20050FFEF /* ArticleListController.swift */,
+				9C8D0ABF2181EDD30050FFEF /* ArticleListPresenter.swift */,
+				9C8D0AC321830B090050FFEF /* ArticleListView.storyboard */,
 			);
 			path = ArticleList;
 			sourceTree = "<group>";
@@ -315,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C8D0AC421830B090050FFEF /* ArticleListView.storyboard in Resources */,
 				9CE3BFF1217E6DD700838D95 /* LaunchScreen.storyboard in Resources */,
 				9CE3BFEE217E6DD700838D95 /* Assets.xcassets in Resources */,
 				9CE3BFEC217E6DD700838D95 /* Main.storyboard in Resources */,
@@ -442,11 +463,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C8D0AA9217F9E870050FFEF /* Utils.swift in Sources */,
-				9CE3BFE9217E6DD700838D95 /* ViewController.swift in Sources */,
 				9CE3BFE7217E6DD700838D95 /* AppDelegate.swift in Sources */,
+				9C8D0AC02181EDD30050FFEF /* ArticleListPresenter.swift in Sources */,
+				9C8D0ABE2181EDC20050FFEF /* ArticleListController.swift in Sources */,
+				9C8D0AC221830AAE0050FFEF /* StoryboardViewController.swift in Sources */,
 				9C8D0AA6217E99FD0050FFEF /* ArticleManager.swift in Sources */,
 				9C8D0ABA2180E4810050FFEF /* SearchMenuController.swift in Sources */,
 				9C8D0AA4217E96020050FFEF /* Article.swift in Sources */,
+				9C8D0AC7218340480050FFEF /* ArticleListCell.swift in Sources */,
 				9C8D0AB22180B6D30050FFEF /* DownloadArticlesInteractor.swift in Sources */,
 				9C8D0ABC2180E49F0050FFEF /* SearchMenuPresenter.swift in Sources */,
 			);
