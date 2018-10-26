@@ -53,7 +53,7 @@ class SearchMenuPresenterImpl: SearchMenuPresenter {
     
     private func sharedMethodParams(facebook: Bool, twitter:Bool) -> String {
         if facebook && twitter {
-            return "facebook;twitter"
+            return "facebook,twitter"
         }
         if facebook {
             return "facebook"

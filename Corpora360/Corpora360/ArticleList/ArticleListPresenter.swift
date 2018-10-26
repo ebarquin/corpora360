@@ -1,6 +1,7 @@
 
 protocol ArticleListPresenter {
     func attachView(view: ArticleListView)
+    func articleItemDidTap(article: Article)
 }
 
 class ArticleListPresenterImpl: ArticleListPresenter {
@@ -8,4 +9,9 @@ class ArticleListPresenterImpl: ArticleListPresenter {
     func attachView(view: ArticleListView) {
         self.view = view
     }
+    
+    func articleItemDidTap(article: Article) {
+        view?.navigateToArticleDetail(article: article)
+    }
+    
 }

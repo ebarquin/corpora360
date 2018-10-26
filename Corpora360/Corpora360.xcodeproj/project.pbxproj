@@ -19,6 +19,9 @@
 		9C8D0AC221830AAE0050FFEF /* StoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0AC121830AAE0050FFEF /* StoryboardViewController.swift */; };
 		9C8D0AC421830B090050FFEF /* ArticleListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8D0AC321830B090050FFEF /* ArticleListView.storyboard */; };
 		9C8D0AC7218340480050FFEF /* ArticleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0AC6218340480050FFEF /* ArticleListCell.swift */; };
+		9C8D0AC921834E740050FFEF /* ArticleDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0AC821834E740050FFEF /* ArticleDetailController.swift */; };
+		9C8D0ACB21834E820050FFEF /* ArticleDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D0ACA21834E820050FFEF /* ArticleDetailPresenter.swift */; };
+		9C8D0ACD21834E930050FFEF /* ArticleDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8D0ACC21834E930050FFEF /* ArticleDetailView.storyboard */; };
 		9CE3BFE7217E6DD700838D95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BFE6217E6DD700838D95 /* AppDelegate.swift */; };
 		9CE3BFEC217E6DD700838D95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3BFEA217E6DD700838D95 /* Main.storyboard */; };
 		9CE3BFEE217E6DD700838D95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3BFED217E6DD700838D95 /* Assets.xcassets */; };
@@ -50,6 +53,9 @@
 		9C8D0AC121830AAE0050FFEF /* StoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewController.swift; sourceTree = "<group>"; };
 		9C8D0AC321830B090050FFEF /* ArticleListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleListView.storyboard; sourceTree = "<group>"; };
 		9C8D0AC6218340480050FFEF /* ArticleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListCell.swift; sourceTree = "<group>"; };
+		9C8D0AC821834E740050FFEF /* ArticleDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailController.swift; sourceTree = "<group>"; };
+		9C8D0ACA21834E820050FFEF /* ArticleDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailPresenter.swift; sourceTree = "<group>"; };
+		9C8D0ACC21834E930050FFEF /* ArticleDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleDetailView.storyboard; sourceTree = "<group>"; };
 		9CE3BFE3217E6DD700838D95 /* Corpora360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Corpora360.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE3BFE6217E6DD700838D95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CE3BFEB217E6DD700838D95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -191,6 +197,9 @@
 		9CE3C00C217E76AD00838D95 /* ArticleDetail */ = {
 			isa = PBXGroup;
 			children = (
+				9C8D0AC821834E740050FFEF /* ArticleDetailController.swift */,
+				9C8D0ACA21834E820050FFEF /* ArticleDetailPresenter.swift */,
+				9C8D0ACC21834E930050FFEF /* ArticleDetailView.storyboard */,
 			);
 			path = ArticleDetail;
 			sourceTree = "<group>";
@@ -336,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C8D0AC421830B090050FFEF /* ArticleListView.storyboard in Resources */,
+				9C8D0ACD21834E930050FFEF /* ArticleDetailView.storyboard in Resources */,
 				9CE3BFF1217E6DD700838D95 /* LaunchScreen.storyboard in Resources */,
 				9CE3BFEE217E6DD700838D95 /* Assets.xcassets in Resources */,
 				9CE3BFEC217E6DD700838D95 /* Main.storyboard in Resources */,
@@ -463,7 +473,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C8D0AA9217F9E870050FFEF /* Utils.swift in Sources */,
+				9C8D0ACB21834E820050FFEF /* ArticleDetailPresenter.swift in Sources */,
 				9CE3BFE7217E6DD700838D95 /* AppDelegate.swift in Sources */,
+				9C8D0AC921834E740050FFEF /* ArticleDetailController.swift in Sources */,
 				9C8D0AC02181EDD30050FFEF /* ArticleListPresenter.swift in Sources */,
 				9C8D0ABE2181EDC20050FFEF /* ArticleListController.swift in Sources */,
 				9C8D0AC221830AAE0050FFEF /* StoryboardViewController.swift in Sources */,

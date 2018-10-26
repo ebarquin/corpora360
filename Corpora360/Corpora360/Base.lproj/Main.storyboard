@@ -25,6 +25,7 @@
                                     <segment title="Most shared"/>
                                     <segment title="Most Viewd"/>
                                 </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="indexChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="C5F-i7-BIg"/>
                                 </connections>
@@ -48,6 +49,7 @@
                                     <segment title="7 days"/>
                                     <segment title="30 days"/>
                                 </segments>
+                                <color key="tintColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="3Ro-DY-qNb">
                                 <rect key="frame" x="56" y="378.66666666666669" width="263" height="30"/>
@@ -57,6 +59,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="lJE-qL-x0c"/>
                                         </constraints>
+                                        <color key="tintColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Facebook"/>
                                         <connections>
                                             <action selector="facebookButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6HA-X7-Qwn"/>
@@ -67,6 +70,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="HtI-gV-Rwa"/>
                                         </constraints>
+                                        <color key="tintColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Twitter"/>
                                         <connections>
                                             <action selector="twitterButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKZ-Cw-ixF"/>
@@ -85,6 +89,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="zhc-3j-VcM"/>
                                 </constraints>
+                                <color key="tintColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Search"/>
                                 <connections>
                                     <action selector="searchButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q4a-ay-m53"/>

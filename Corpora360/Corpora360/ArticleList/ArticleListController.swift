@@ -3,7 +3,7 @@ import UIKit
 import Kingfisher
 
 protocol ArticleListView {
-    
+    func navigateToArticleDetail(article: Article)
 }
 
 class ArticleListViewController: UIViewController, ArticleListView, StoryboardViewController, UITableViewDataSource, UITableViewDelegate {
@@ -49,5 +49,17 @@ class ArticleListViewController: UIViewController, ArticleListView, StoryboardVi
         cell.articleSectionLabel.text = withArticle.section
         cell.articleDateLabel.text = withArticle.date
         cell.articleImageView.kf.setImage(with: ImageResource(downloadURL: URL(string: withArticle.image)!), placeholder: UIImage(named: "nyt_logo"), options: nil, progressBlock: nil, completionHandler: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let article = articles![indexPath.row]
+        
+        presenter?.articleItemDidTap(article: article)
+    }
+    
+    func navigateToArticleDetail(article: Article) {
+        let articleDetailVC = ArticleDetailViewController.initFromStoryboard()
+        articleDetailVC.article = article
+        navigationController?.pushViewController(articleDetailVC, animated: true)
     }
 }
